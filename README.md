@@ -1,8 +1,17 @@
 # Energy-Based Models for Cross-Modal Localization using Convolutional Transformers
+
+If you find this repository useful for your research, please cite our paper:
+
+        @inproceedings{wu2019fisl,
+              title={Model-based Behavioral Cloning with Future Image Similarity Learning},
+              <--! booktitle={International Conference on Robotics and Automation (ICRA)}, -->
+              author={Alan Wu, AJ Piergiovanni, and Michael S. Ryoo},
+              year={2019}
+        }
         
 We present a novel framework using Energy-Based Models (EBMs) for localizing a ground vehicle mounted with a range sensor against satellite imagery in the absence of GPS. Lidar sensors have become ubiquitous on autonomous vehicles for describing its surrounding environment. Map priors are typically built using the same sensor modality for localization purposes. However, these map building endeavors using range sensors are often expensive and time-consuming. Alternatively, we leverage the use of satellite images as map priors, which are widely available, easily accessible, and provide comprehensive coverage. We propose a method using convolutional transformers that performs accurate metric-level localization in a cross-modal manner, which is challenging due to the drastic difference in appearance between the sparse range sensor readings and the rich satellite imagery. We train our model end-to-end and demonstrate our approach achieving higher accuracy than the state-of-the-art on KITTI, Pandaset, and a custom dataset.
 
-![Model](/figures/SystemDiagram_smallest.png)
+![SystemDiagram](/figures/SystemDiagram_smallest.png)
 
 Here is a sample of training videos from a real office environment with various targets:
 
