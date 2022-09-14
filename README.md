@@ -1,6 +1,6 @@
 # Energy-Based Models for Cross-Modal Localization using Convolutional Transformers
 
-If you find this repository useful for your research, please cite our paper:
+If you find this repository useful for your research, please cite our [paper](ECML_ICRA.pdf):
 
         @inproceedings{wu2022ecml,
               title={Energy-Based Models for Cross-Modal Localization using Convolutional Transformers},
