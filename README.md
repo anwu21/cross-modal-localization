@@ -12,8 +12,10 @@ We present a novel framework using Energy-Based Models (EBMs) for localizing a g
 
 Below is the system diagram of our approach. We use lidar data to find vehicle pose within a satellite image. Point cloud data from range sensors have shown to be
 effective in localization tasks when a flattening step is applied to produce a birds-eye view (BEV) of the environment surrounding the vehicle. We use this BEV representation to localize within a large map area. While our primary objective is to estimate vehicle position in the x,y-plane, our method also solves for the rotational offset between the online lidar image and the satellite map prior.
+<\br>
 
 ![SystemDiagram](/figures/SystemDiagram_smallest.png)
+<\br>
 
 The key component of our EBM is a convolutional transformer (CT). The CT architecture applies particularly well to our application as the early convolutional
 layers help better preserve local structural information that would otherwise have been lost by direct tokenization of input images (i.e. patch boundaries). The class and position embeddings used in the ViT architecture are eliminated in the CT approach. The implementation of the sequence pooling layer renders such embeddings unnecessary, leading to a more compact transformer. Our model architecture is shown below.
