@@ -54,10 +54,16 @@ We take 100 waypoints from each of our datasets and measure pose prediction accu
 
 ![ResultsTable](/figures/results_table.png)</br></br>
 
-We show the histograms for ECML-CT and ECML-CNN for all the datasets. ECML-CT is more robust as the standard deviation is lower. </br>
-![hist_ct](/figures/histogram_ct.png)![hist_cnn](/figures/histogram_cnn.png)</br>
+We show the histograms for ECML-CT (green) and ECML-CNN (blue) for all the datasets. ECML-CT is more robust as it has lower variance. </br>
+ECML-CT histograms:</br>
+![hist_ct1](/figures/hist_kitti_pandaset_xf.png)![hist_ct2](/figures/hist_ntc_ntc_bycity_xf.png)</br>
+ECML-CNN histograms:</br>
+![hist_cnn1](/figures/hist_kitti_pandaset.png)![hist_cnn2](/figures/hist_ntc_ntc_bycity.png)</br>
 
+Furthermore, we investigate the effect of map coverage area and heading noise have on pose estimation accuracy. See plots below. Although the error increases with increasing map sizes and greater heading uncertainty, ECML-CT has the lowest rate of error increase. We use the KITTI dataset for illustration here.
 
+![mapsize](/figures/accuracy_vs_mapsize_xf.png)</br>
+![noise](/figures/accuracy_vs_noise_xf.png)</br>
 
 
 
